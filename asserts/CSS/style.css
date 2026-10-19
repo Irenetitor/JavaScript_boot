@@ -1,5 +1,131 @@
-/*
- * Hoja de estilos vinculada desde index.html.
- * Aquí se definen las reglas visuales (colores, tamaños y disposición) de la página.
- * Por ahora no hay reglas CSS; el navegador muestra el botón con sus estilos predeterminados.
- */
+/* ejercicio 1: Clase que JavaScript añade o quita al body para cambiar el fondo de toda la página. */
+body.fondo-rojo {
+  background-color: red;
+}
+
+/* Clase que JavaScript añade o quita solo al segundo botón. */
+button.boton-rojo {
+  background-color: red;
+  color: white;
+}
+
+/* Ejercicio 2: esta clase aumenta el tamaño de fuente solo en el h1. */
+h1.tamano-fuente {
+  font-size: 5em;
+}
+
+/* Ejercicio 3: al añadir esta clase, el texto del título pasa de la izquierda al centro. */
+h1.mover-texto {
+  text-align: center;
+}
+
+/* Ejercicio 4: este id define el cuadrado visible desde que carga la página. */
+#cuadrado {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  margin-top: 16px;
+  background-color: mediumseagreen;
+}
+
+#cuadrado.puntas_redondas {
+  border-radius: 24px;
+}
+
+/* Ejercicio 5: el párrafo se pone blanco cuando JavaScript le añade esta clase. */
+#texto-fondo {
+  color: white;
+}
+
+/* Ejercicio 6: esta clase oculta el botón. */
+button.ocultar-boton {
+  display: none;
+}
+
+/* Ejercicio 7: esta clase cambia la imagen. */
+img.cambio-foto {
+  content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsxHB0W8jnPeu8UYSJsnRhj6o-JneCEvb85CAuIJZ2nw&s=10");
+}
+
+/* Ejercicio 10: aspecto gris del botón cuando JavaScript lo desactiva. */
+#boton-disabled:disabled {
+  background-color: #ccc;
+  color: #888;
+  cursor: not-allowed;
+}
+
+/* Ejercicio 20: clase que JavaScript añade con classList.add (texto verde, borde rojo y letras grandes). */
+.clase-magica {
+  color: green;
+  border: 3px solid red;
+  font-size: 2rem;
+  -webkit-text-stroke: 1px red; /* Contorno rojo alrededor de cada letra. */
+}
+
+/* Ejercicio 21: modo noche (fondo negro y letras blancas) que se aplica solo al contenedor. */
+.noche {
+  background-color: black;
+  color: white;
+}
+
+/* Ejercicio 22: caja invisible que sigue ocupando su espacio y tarda 2 segundos en cambiar. */
+#caja-secreta {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+/* Ejercicio 23: el personaje (cuadrado morado) y sus tres disfraces. */
+#personaje {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(93, 13, 69);
+}
+
+#personaje.fuego {
+  background-color: red;
+  border: 5px solid orange;
+}
+
+#personaje.agua {
+  background-color: rgb(154, 223, 246);
+  border-radius: 50%;
+}
+
+#personaje.tierra {
+  background-color: rgb(121, 58, 14);
+  border: 5px solid rgb(156, 238, 156);
+}
+
+/* Ejercicio 24: lienzo grande que se pinta con el color elegido. */
+#lienzo {
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+/* Espacio arriba y abajo de cada ejercicio para que no se apelmacen. */
+.ejercicio {
+  margin: 2rem 0;
+}
+
+/* Ejercicio 25: celda grande donde se mueve el botón; position: relative hace que top y left se midan desde ella. */
+#arena {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border: 2px dashed gray;
+}
+
+/* Botón bonito que puede moverse libremente dentro de la celda. */
+#boton-escurridizo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 12px 24px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  font-size: 1rem;
+}

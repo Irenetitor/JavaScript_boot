@@ -1,6 +1,6 @@
 <!-- Indica al navegador que este documento utiliza el estándar HTML5. -->
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Codificación UTF-8 para mostrar correctamente tildes y otros caracteres. -->
     <meta charset="UTF-8" />
@@ -11,11 +11,163 @@
     <!-- Carga las reglas de estilo definidas en la hoja CSS del proyecto. -->
     <link rel="stylesheet" href="./asserts/CSS/style.css" />
   </head>
-  <body>
+  <body id="cuerpo">
+    <h1 id="titulo">Mi pagina web</h1>
     <!-- Botón identificado por JavaScript para escuchar los clics del usuario. -->
     <button id="consola">Imprimir en consola</button>
-    <!-- Carga el código que añade el comportamiento interactivo al botón. -->
 
+    <section class="ejercicio">
+      <!-- Ejercicio 1: cambiar el color de fondo. -->
+      <!-- Botón que alterna el color de fondo de toda la página. -->
+      <button id="semaforo">Cambiar fondo a rojo</button>
+      <!-- Segundo ejemplo: este botón cambia su propio color, no el de la página. -->
+      <button id="boton-rojo">Cambiar este botón a rojo</button>
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 2: cambiar el tamaño de fuente. -->
+      <button id="tamano_fuente">Cambiar tamaño de fuente</button>
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 3: Mover texto -->
+      <button id="mover_texto">Mover texto</button>
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 4: el cuadrado permanece visible y el botón alterna la forma de sus esquinas. -->
+      <button id="boton-esquinas">Redondear esquinas</button>
+      <div id="cuadrado" aria-label="Cuadrado del ejercicio 4"></div>
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 5: el texto cambia al color del fondo. -->
+      <button id="boton-fondo">Cambiar color de fondo</button>
+      <p id="texto-fondo">Texto del ejercicio 5</p>
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 6: oculta el botón. -->
+      <button id="ocultar-boton">Ocultar botón</button>
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 7: cambio de foto -->
+      <button id="cambio-foto">Cambiar foto</button>
+      <img
+        id="imagen"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVc6vTiSnJmMix0b-5A3x73Kc7QXdcEwD_lQqt6ldGIQ&s=1024"
+        alt="Foto del ejercicio 7"
+      />
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 8: destino url enganoso. -->
+      <button id="boton-url">Ir a Disney</button>
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 9: input change-->
+      <input id="nombre" type="text" placeholder="Escribe tu nombre" />
+      <button id="boton-robot">Enviar</button>
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 10: button disabled-->
+      <button id="boton-disabled">Deshabilitar botón</button>
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 11: clonar parrafo-->
+      <p id="parrafo-original">Este es el párrafo original.</p>
+      <button id="boton-clonar">Clonar párrafo</button>
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 12: crear botón -->
+      <button id="boton-nuevo">Crear nuevo botón</button>
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 13: h2 dentro de un div -->
+      <button id="boton-sorpresa">Press it</button>
+      <div id="caja"></div>
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 14: imagen invocada -->
+      <button id="imagen-invocada">Invocar imagen</button>
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 15: texto en negrita -->
+      <p id="parrafo-vacio"></p>
+      <button id="boton-hola">Inyectar texto</button>
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 16: mouseover -->
+      <button id="boton-amarillo">Pasa el ratón</button>
+      <!-- Ejercicio 17: mouseout -->
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 18: dblclick. El atributo title hace que el navegador muestre un tooltip al dejar el ratón encima. -->
+      <h2 id="titulo-duro" title="Haz doble clic">
+        Haz doble clic para romperme
+      </h2>
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 19: keyup -->
+      <input id="caja-teclas" type="text" placeholder="Escribe algo" />
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 20: classList.add -->
+      <p id="parrafo-magico">Soy un párrafo normal</p>
+      <button id="boton-magico">Hacer magia</button>
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 21: modo noche dentro de un contenedor -->
+      <div id="contenedor-noche">
+        <h2>Caja con modo nocturno</h2>
+        <p>Este texto cambia entre modo día y modo noche.</p>
+        <button id="boton-noche">Apagar</button>
+      </div>
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 22: opacity y transition -->
+      <div id="caja-secreta">Mensaje secreto: ¡hoy es tu día de suerte!</div>
+      <button id="boton-secreto">Revelar mensaje</button>
+      <button id="boton-esconder">Esconder mensaje</button>
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 23: className -->
+      <div id="personaje"></div>
+      <button id="boton-fuego">Fuego</button>
+      <button id="boton-agua">Agua</button>
+      <button id="boton-tierra">Tierra</button>
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 24: input type="color" -->
+      <label for="selector-color">Paleta de colores: elige un color para pintar el lienzo</label>
+      <input id="selector-color" type="color" />
+      <div id="lienzo"></div>
+    </section>
+
+    <section class="ejercicio">
+      <!-- Ejercicio 25: botón escurridizo -->
+      <div id="arena">
+        <button id="boton-escurridizo">¡Atrápame!</button>
+      </div>
+    </section>
+
+    <!-- Carga el JavaScript después de los elementos para que pueda encontrarlos por su id. -->
     <script src="./js/script.js"></script>
   </body>
 </html>
