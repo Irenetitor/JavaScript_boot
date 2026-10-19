@@ -123,7 +123,13 @@ botonEsquinas.addEventListener("click", () => {
 
 // Ejercicio 5: cambia el texto al color del fondo y viceversa.
 botonFondo.addEventListener("click", () => {
-  textoFondo.classList.toggle("texto-fondo");
+  const estaCamuflado = textoFondo.classList.toggle("texto-fondo");
+
+  if (estaCamuflado) {
+    textoFondo.style.color = getComputedStyle(cuerpo).backgroundColor;
+  } else {
+    textoFondo.style.color = ""; // Quita el color en línea y recupera el color negro del CSS.
+  }
 });
 
 // Ejercicio 6: oculta el botón.

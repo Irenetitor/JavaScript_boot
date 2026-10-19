@@ -32,9 +32,9 @@ h1.mover-texto {
   border-radius: 24px;
 }
 
-/* Ejercicio 5: el párrafo se pone blanco cuando JavaScript le añade esta clase. */
+/* Ejercicio 5: estado inicial legible sobre el fondo blanco de la página. */
 #texto-fondo {
-  color: white;
+  color: black;
 }
 
 /* Ejercicio 6: esta clase oculta el botón. */
