@@ -2,18 +2,69 @@
 
 Cada ejercicio tiene su bloque en [index.html](index.html), su estilo en [asserts/CSS/style.css](asserts/CSS/style.css) y su lógica en [js/script.js](js/script.js).
 
-## Ejercicios 1 a 8
+## Ejercicio 1: Cambiar el color de fondo de la página
 
-_Pendiente de pegar los enunciados._
+**El Reto:** Haz que un botón cambie el color de fondo de toda la página a rojo al hacer clic, y que otro botón cambie solo su propio color a rojo.
 
-- 1: cambiar el color de fondo de la página
-- 2: cambiar el tamaño de fuente
-- 3: mover texto
-- 4: esquinas redondeadas del cuadrado
-- 5: el texto cambia al color del fondo
-- 6: ocultar un botón
-- 7: cambio de foto
-- 8: destino de URL engañoso
+**Pista de detective:** Para cambiar algo desde JavaScript, atrapa el elemento por su `id` y usa `classList.toggle()` con una clase definida en el CSS.
+
+_Texto reconstruido a partir del código: no es el enunciado original._
+
+## Ejercicio 2: Cambiar el tamaño de fuente
+
+**El Reto:** Haz que un botón aumente el tamaño de la letra del título de la página al hacer clic.
+
+**Pista de detective:** Define en el CSS una clase con un `font-size` mayor y alterna esa clase con `classList.toggle()`.
+
+_Texto reconstruido a partir del código: no es el enunciado original._
+
+## Ejercicio 3: Mover texto
+
+**El Reto:** Haz que un botón mueva el título de la página desde la izquierda hasta el centro al hacer clic.
+
+**Pista de detective:** Investiga la propiedad CSS `text-align` y alterna una clase con `classList.toggle()`.
+
+_Texto reconstruido a partir del código: no es el enunciado original._
+
+## Ejercicio 4: Esquinas redondeadas del cuadrado
+
+**El Reto:** Dibuja un cuadrado visible desde que carga la página. Haz que un botón redondee o vuelva a poner normales sus esquinas, y que el texto del botón cambie según el estado.
+
+**Pista de detective:** Investiga la propiedad CSS `border-radius`. Con `classList.contains()` puedes saber si el elemento ya tiene una clase.
+
+_Texto reconstruido a partir del código: no es el enunciado original._
+
+## Ejercicio 5: El texto cambia al color del fondo
+
+**El Reto:** Haz que un párrafo cambie su color de texto al color del fondo de la página al pulsar un botón, de modo que parezca que desaparece.
+
+**Pista de detective:** Alterna con `classList.toggle()` una clase que ponga el texto del mismo color que el fondo.
+
+_Texto reconstruido a partir del código: no es el enunciado original._
+
+## Ejercicio 6: Ocultar un botón
+
+**El Reto:** Haz que un botón se oculte de la página al hacer clic en él.
+
+**Pista de detective:** Investiga la propiedad CSS `display` y su valor `none`.
+
+_Texto reconstruido a partir del código: no es el enunciado original._
+
+## Ejercicio 7: Cambio de foto
+
+**El Reto:** Haz que al pulsar un botón cambie la imagen de la página por otra distinta.
+
+**Pista de detective:** Una imagen `<img>` puede cambiarse desde CSS con la propiedad `content: url(...)`. Alterna una clase con `classList.toggle()`.
+
+_Texto reconstruido a partir del código: no es el enunciado original._
+
+## Ejercicio 8: Destino de URL engañoso
+
+**El Reto:** Crea un botón que diga "Ir a Disney" pero que, al hacer clic, te lleve a otra página distinta.
+
+**Pista de detective:** Investiga `window.location.href` para cambiar de página desde JavaScript.
+
+_Texto reconstruido a partir del código: no es el enunciado original._
 
 ## Ejercicio 9: valor de un input
 
@@ -29,7 +80,11 @@ _Pendiente de pegar los enunciados._
 
 ## Ejercicio 11: clonar un párrafo
 
-_Pendiente de pegar el enunciado._
+**El Reto:** Crea un párrafo y un botón. Al pulsar el botón, el párrafo debe clonarse y aparecer una copia justo debajo del original.
+
+**Pista de detective:** Investiga el método `cloneNode(true)` y cómo insertar el clon en la página.
+
+_Texto reconstruido a partir del código: no es el enunciado original._
 
 ## Ejercicio 12: crear un botón desde JavaScript
 
