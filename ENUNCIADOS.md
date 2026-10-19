@@ -1,146 +1,148 @@
 # Enunciados de los ejercicios
 
-Cada ejercicio tiene su bloque en [index.html](index.html), su estilo en [asserts/CSS/style.css](asserts/CSS/style.css) y su lógica en [js/script.js](js/script.js).
+Enunciados tomados de `js vanilla.pdf`. Cada ejercicio tiene su bloque en [index.html](index.html), su estilo en [asserts/CSS/style.css](asserts/CSS/style.css) y su lógica en [js/script.js](js/script.js).
 
-## Ejercicio 1: Cambiar el color de fondo de la página
+## 🎨 Misiones de Pintura y Estilo (Asignación)
 
-**El Reto:** Haz que un botón cambie el color de fondo de toda la página a rojo al hacer clic, y que otro botón cambie solo su propio color a rojo.
+El objetivo aquí es cambiar cómo se ven las cosas usando la fórmula: `elemento.style.propiedad = "valor"`
 
-**Pista de detective:** Para cambiar algo desde JavaScript, atrapa el elemento por su `id` y usa `classList.toggle()` con una clase definida en el CSS.
+### 1. Misión: El semáforo rojo
 
-_Texto reconstruido a partir del código: no es el enunciado original._
+**El Reto:** Crea un botón. Al hacerle clic, el color de fondo de toda la página (body) debe volverse rojo.
 
-## Ejercicio 2: Cambiar el tamaño de fuente
+**Pista de detective:** Investiga cómo se dice "color de fondo" en inglés. Recuerda que en JavaScript, si una palabra en inglés tiene dos partes (como background color), se escriben juntas y la segunda empieza con mayúscula.
 
-**El Reto:** Haz que un botón aumente el tamaño de la letra del título de la página al hacer clic.
+### 2. Misión: Letras gigantes
 
-**Pista de detective:** Define en el CSS una clase con un `font-size` mayor y alterna esa clase con `classList.toggle()`.
+**El Reto:** Tienes un título `<h1>` normal. Al pulsar un botón, ¡el texto debe volverse gigantesco!
 
-_Texto reconstruido a partir del código: no es el enunciado original._
+**Pista de detective:** Investiga qué propiedad de style en JavaScript sirve para cambiar el "tamaño de la fuente" (font size).
 
-## Ejercicio 3: Mover texto
+### 3. Misión: El texto que se mueve
 
-**El Reto:** Haz que un botón mueva el título de la página desde la izquierda hasta el centro al hacer clic.
+**El Reto:** Haz que un párrafo que está a la izquierda se mueva exactamente al centro de la pantalla al hacer clic.
 
-**Pista de detective:** Investiga la propiedad CSS `text-align` y alterna una clase con `classList.toggle()`.
+**Pista de detective:** En internet, busca "cómo alinear texto al centro con JavaScript". ¡La palabra mágica termina en Align!
 
-_Texto reconstruido a partir del código: no es el enunciado original._
+### 4. Misión: Esquinas suavecitas
 
-## Ejercicio 4: Esquinas redondeadas del cuadrado
+**El Reto:** Crea una caja cuadrada (un div con color). Al hacer clic, las esquinas del cuadrado deben volverse redonditas.
 
-**El Reto:** Dibuja un cuadrado visible desde que carga la página. Haz que un botón redondee o vuelva a poner normales sus esquinas, y que el texto del botón cambie según el estado.
+**Pista de detective:** Necesitas cambiar el "radio del borde" (border radius).
 
-**Pista de detective:** Investiga la propiedad CSS `border-radius`. Con `classList.contains()` puedes saber si el elemento ya tiene una clase.
+### 5. Misión: Letras invisibles
 
-_Texto reconstruido a partir del código: no es el enunciado original._
+**El Reto:** Haz que, al pulsar un botón, el texto de un párrafo cambie al mismo color que tiene el fondo de la página, para que parezca que ha desaparecido.
 
-## Ejercicio 5: El texto cambia al color del fondo
+**Pista de detective:** Solo necesitas saber el color exacto de tu fondo y aplicárselo al texto usando `style.color`.
 
-**El Reto:** Haz que un párrafo cambie su color de texto al color del fondo de la página al pulsar un botón, de modo que parezca que desaparece.
+## 👻 Misiones de Magia y Engaño (Atributos)
 
-**Pista de detective:** Alterna con `classList.toggle()` una clase que ponga el texto del mismo color que el fondo.
+Aquí investigarán cómo cambiar características que están dentro de las etiquetas HTML.
 
-_Texto reconstruido a partir del código: no es el enunciado original._
+### 6. Misión: El botón fantasma
 
-## Ejercicio 6: Ocultar un botón
+**El Reto:** Al hacer clic en un botón, ¡el botón debe desaparecer por completo de la página!
 
-**El Reto:** Haz que un botón se oculte de la página al hacer clic en él.
+**Pista de detective:** Busca en internet "cómo ocultar un elemento con display en JavaScript". ¡Hay un valor que significa "ninguno" en inglés!
 
-**Pista de detective:** Investiga la propiedad CSS `display` y su valor `none`.
+### 7. Misión: El cambia-caras (Imágenes)
 
-_Texto reconstruido a partir del código: no es el enunciado original._
+**El Reto:** Pon una imagen de un perrito. Al hacer clic en un botón, la imagen debe cambiar por la de un gatito.
 
-## Ejercicio 7: Cambio de foto
+**Pista de detective:** ¿Recuerdas qué atributo de HTML usas para poner la ruta de una imagen? ¡En JavaScript puedes asignarle una nueva ruta a esa misma propiedad!
 
-**El Reto:** Haz que al pulsar un botón cambie la imagen de la página por otra distinta.
+### 8. Misión: El enlace mentiroso
 
-**Pista de detective:** Una imagen `<img>` puede cambiarse desde CSS con la propiedad `content: url(...)`. Alterna una clase con `classList.toggle()`.
+**El Reto:** Crea un enlace que diga "Ir a Disney". Pero al hacer clic en un botón mágico, si alguien pulsa el enlace, lo llevará a Wikipedia.
 
-_Texto reconstruido a partir del código: no es el enunciado original._
+**Pista de detective:** Los enlaces usan el atributo `href` para saber a dónde ir. ¡Cámbialo con la fórmula de asignación!
 
-## Ejercicio 8: Destino de URL engañoso
-
-**El Reto:** Crea un botón que diga "Ir a Disney" pero que, al hacer clic, te lleve a otra página distinta.
-
-**Pista de detective:** Investiga `window.location.href` para cambiar de página desde JavaScript.
-
-_Texto reconstruido a partir del código: no es el enunciado original._
-
-## Ejercicio 9: valor de un input
+### 9. Misión: La caja pre-escrita
 
 **El Reto:** Crea una caja donde la gente escribe su nombre (`<input>`). Al darle a un botón, la caja debe rellenarse sola con el texto "¡Hola, soy un robot!".
 
 **Pista de detective:** Las cajas de texto guardan su información en una propiedad llamada "valor" (`value` en inglés).
 
-## Ejercicio 10: deshabilitar un botón
+### 10. Misión: El botón congelado
 
 **El Reto:** Haz que un botón se "apague" (que ya no se pueda hacer clic en él y se vea gris) después de pulsarlo una vez.
 
 **Pista de detective:** Investiga la propiedad `disabled` (desactivado) en JavaScript. ¡Acepta valores especiales, busca cuáles son!
 
-## Ejercicio 11: clonar un párrafo
+## 🏗 Misiones de Constructores (Crear elementos)
 
-**El Reto:** Crea un párrafo y un botón. Al pulsar el botón, el párrafo debe clonarse y aparecer una copia justo debajo del original.
+Practicarán la fórmula de buscar/crear y luego la acción de agregar (`appendChild`).
 
-**Pista de detective:** Investiga el método `cloneNode(true)` y cómo insertar el clon en la página.
+### 11. Misión: El clonador de párrafos
 
-_Texto reconstruido a partir del código: no es el enunciado original._
+**El Reto:** Cada vez que hagas clic en el botón principal, debe aparecer un párrafo nuevo al final de la página que diga "¡Me he clonado!".
 
-## Ejercicio 12: crear un botón desde JavaScript
+**Pista de detective:** Necesitas la herramienta `document.createElement` para crear el párrafo de la nada.
+
+_Nota: mi solución actual clona un párrafo existente con `cloneNode` y escribe "Soy el párrafo clonado", así que no sigue exactamente este enunciado._
+
+### 12. Misión: Lluvia de botones
 
 **El Reto:** Crea un botón vacío desde JavaScript (sin tocar el HTML), ponle de texto "Soy nuevo" y pégalo en la página.
 
 **Pista de detective:** Es igual que la misión anterior, pero creando un elemento tipo `button`. ¡Recuerda ponerle texto antes de pegarlo en la página!
 
-## Ejercicio 13: un h2 dentro de un div
+### 13. Misión: El título impostor
 
 **El Reto:** Crea desde JavaScript un título `<h2>` con el texto "¡Sorpresa!", pero en lugar de pegarlo al final, debes meterlo dentro de una cajita `div` que ya existe en el HTML.
 
 **Pista de detective:** Primero atrapa el `div` con la fórmula de búsqueda, y luego pégale el título adentro con tu acción favorita (`appendChild`).
 
-## Ejercicio 14: imagen creada con JavaScript
+### 14. Misión: La imagen invocada
 
 **El Reto:** No pongas ninguna imagen en tu HTML. Solo con JavaScript, crea la imagen, ponle su ruta (su enlace de internet) y haz que aparezca en pantalla.
 
 **Pista de detective:** Combina `document.createElement`, le asignas su ruta, y luego lo pegas en el cuerpo de la página.
 
-## Ejercicio 15: innerHTML
+### 15. Misión: El mensaje en negrita
 
 **El Reto:** Cambia el contenido de un párrafo vacío para que diga "Hola" pero que esté en texto muy gordito y negro (negrita).
 
 **Pista de detective:** Hasta ahora cambiaste textos normales, pero investiga qué es `innerHTML`. ¡Te permite inyectar etiquetas HTML como `<b>` o `<strong>` escritas entre las comillas!
 
-## Ejercicio 16: pasar el ratón por encima
+## ⚡ Misiones de Súper Reflejos (Nuevos Eventos)
+
+Hasta ahora solo conocen el clic. Aquí investigarán qué otras cosas pueden despertar a JavaScript.
+
+### 16. Misión: El botón asustadizo
 
 **El Reto:** Haz que un botón cambie de color a amarillo ¡sin hacerle clic! Solo con pasar el ratón por encima.
 
 **Pista de detective:** Vas a usar `addEventListener`, pero la palabra mágica ya no es "click". Busca en internet "evento de pasar el ratón por encima en JavaScript".
 
-## Ejercicio 17: quitar el ratón de encima
+### 17. Misión: El botón valiente
 
 **El Reto:** El complemento de la misión anterior. Cuando quites el ratón de encima del botón, este debe volver a su color original.
 
 **Pista de detective:** Busca cuál es el evento hermano para cuando el ratón "sale" o "se va" del elemento.
 
-## Ejercicio 18: doble clic
+### 18. Misión: El doble golpe
 
 **El Reto:** Este título es muy duro. No hace nada con un clic normal, pero si le das dos clics súper rápidos, su texto cambia a "¡Me rompiste!".
 
 **Pista de detective:** Existe un evento especial solo para los dobles clics. ¿Cómo se dirá "doble clic" en inglés?
 
-## Ejercicio 19: soltar una tecla
+### 19. Misión: El espía del teclado
 
 **El Reto:** Crea una caja de texto (`<input>`). Cada vez que levantes el dedo después de apretar una tecla, debe cambiar el color de fondo de la página.
 
 **Pista de detective:** Busca eventos de teclado en JavaScript. Hay uno que se activa justo cuando la tecla sube (key up).
 
-## Ejercicio 20: classList.add
+### 20. Misión: El camaleón de etiquetas
 
 **El Reto:** En tu archivo de estilos (CSS), crea una "clase" llamada `.clase-magica` que tenga color verde, borde rojo y letras grandes. Desde JavaScript, ponle esa clase a un elemento al hacer clic.
 
 **Pista de detective:** Los elementos de HTML tienen una lista de clases. Investiga cómo se usa `classList.add()` en JavaScript. ¡Es como ponerle un disfraz prefabricado!
 
-## Ejercicio 21: modo noche
+## 🎭 Misiones de Transformación Total (HTML + CSS + JS)
+
+### 21. Misión: El Modo Nocturno (El interruptor mágico)
 
 **El Reto:** Crea una página con título y texto. En CSS, crea una clase llamada `.noche` que tenga fondo negro y letras blancas. Haz un botón que, al pulsarlo, le ponga la clase `.noche` a la página, y si lo vuelves a pulsar, se la quite. ¡Como apagar y prender la luz!
 
@@ -148,7 +150,7 @@ _Texto reconstruido a partir del código: no es el enunciado original._
 
 _Variación hecha aquí: el efecto se aplica dentro de un contenedor y el botón cambia su texto entre "Apagar" y "Encender"._
 
-## Ejercicio 22: opacity y transition
+### 22. Misión: La carta secreta que aparece lentamente
 
 **El Reto:** Crea una caja (`div`) en HTML con un mensaje secreto. En CSS, haz que sea invisible (pero que siga ocupando su espacio) y ponle un efecto para que los cambios tarden 2 segundos en ocurrir. Con JS, haz que un botón la vuelva completamente visible.
 
@@ -156,19 +158,19 @@ _Variación hecha aquí: el efecto se aplica dentro de un contenedor y el botón
 
 _Variación hecha aquí: un segundo botón "Esconder mensaje" vuelve a dejar la caja invisible._
 
-## Ejercicio 23: className
+### 23. Misión: El probador de disfraces
 
 **El Reto:** Dibuja un cuadrado en tu HTML (será tu personaje). Crea 3 botones: "Fuego", "Agua" y "Tierra". En tu CSS, prepara tres clases diferentes (ej: `.fuego` con fondo rojo y bordes naranjas, `.agua` celeste y redondo...). Con JS, haz que cada botón le asigne su disfraz (clase) correspondiente al personaje.
 
 **Pista de detective:** Recuerda tener tu archivo `.css` bien conectado en el `<head>`. Luego, en JS, atrapa tu personaje y usa `className` para cambiarle el traje completo de golpe.
 
-## Ejercicio 24: selector de color
+### 24. Misión: La paleta del pintor
 
 **El Reto:** En HTML existe una etiqueta especial para elegir colores. Ponla en tu página junto con una caja grande y vacía (un `div` que será tu lienzo). Cada vez que elijas un color nuevo, la caja grande debe pintarse de ese color.
 
 **Pista de detective:** Para el HTML, busca `<input type="color">`. Para el JS, recuerda que las cajas de input guardan su información en una propiedad llamada `value`. ¡Usa un evento diferente al clic (busca el evento `input` o `change`) para robar ese color y ponérselo al fondo de tu caja!
 
-## Ejercicio 25: botón escurridizo
+### 25. Misión: La caja que huye de ti
 
 **El Reto:** Crea un botón muy bonito usando CSS (bordes redondeados, sombra, un color llamativo). En JS, haz que cuando el ratón pase por encima del botón (sin hacer clic), el botón cambie mágicamente a una posición distinta de la pantalla para que no lo puedan atrapar.
 
